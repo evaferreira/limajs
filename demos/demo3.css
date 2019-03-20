@@ -1,28 +1,18 @@
-demo3.css
+/* video5.css */
 
 .bg{
-	max-width: 1000px;
-	min-height: 500px;
-	margin: 50px auto;
 	position: relative;
-	overflow: hidden;
 }
 
-.video{
-	filter: sepia(1) grayscale(50%);
-	
-	transition: filter 1s;
-	/* animation: filtro 5s 3s infinite; */
+video{
+	position: absolute;
 }
 
-.video:hover{
-	filter: sepia(0) grayscale(50%) contrast(3);
+.video2{
+	mix-blend-mode: luminosity;
 }
-
-@keyframes filtro{
-	100%{
-		filter: sepia(0) grayscale(0) invert(1);
-	}
+.video2:hover{
+	/* mix-blend-mode: hard-light; */
+	mix-blend-mode: difference;
+	/* mix-blend-mode: color-dodge; */
 }
-
-
