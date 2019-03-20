@@ -1,0 +1,18 @@
+/* video5.css */
+
+.bg{
+	position: relative;
+}
+
+video{
+	position: absolute;
+}
+
+.video2{
+	mix-blend-mode: luminosity;
+}
+.video2:hover{
+	/* mix-blend-mode: hard-light; */
+	mix-blend-mode: difference;
+	/* mix-blend-mode: color-dodge; */
+}

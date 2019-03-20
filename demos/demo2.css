@@ -1,0 +1,14 @@
+/* demo2.css */
+
+.bg{
+	max-width: 1000px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.bg img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

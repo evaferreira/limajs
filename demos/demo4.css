@@ -1,0 +1,33 @@
+/* video4a.css */
+
+.bg{
+	position: relative;
+}
+
+video{
+	position: absolute;
+}
+
+.video2{
+	animation: filtros 3s 3s ease-in infinite;
+	clip-path: circle(250px at 100% 50%);
+	filter: contrast(3) sepia(0.5) invert(1);
+}
+
+@keyframes filtros{
+	50%{
+		clip-path: circle(350px at 80% 100%);
+	}
+}
+
+.video3{
+	animation: filtros3 5s 1s infinite;
+	filter: sepia(0.7) brightness(1.5);
+	clip-path: polygon(0 63%, 0% 100%, 36% 100%);
+}
+
+@keyframes filtros3{
+	100%{
+		clip-path: polygon(0 0, 0% 100%, 22% 0);
+	}
+}

@@ -1,0 +1,28 @@
+/* video23.css */
+
+.bg{
+	max-width: 1000px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.video1, .video2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.video2{
+	clip-path: circle(100px);
+	mix-blend-mode: soft-light;
+	filter: invert(0);
+	transition: clip-path 0.7s cubic-bezier(.56,1.67,.87,1.76),
+				filter    0.7s;
+}
+.video2:hover{
+	clip-path: circle(250px);
+	filter: invert(1);
+}
+
+
