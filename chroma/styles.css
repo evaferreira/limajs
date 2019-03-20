@@ -1,0 +1,24 @@
+#c1 {
+	/* display: none; */
+}
+#video {
+	display: none;
+}
+#c2 {
+	background-image: url(images/hogwarts.png);
+	background-repeat: no-repeat;
+	background-size: cover;   
+}
+
+.videos {
+	padding: 50px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.canvas-text {
+  text-align: right;
+}

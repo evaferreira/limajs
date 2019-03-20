@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Some Chroma key</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<div class="videos">
+		  <div>
+			<video id="video" controls autoplay></video>
+		  </div>
+		  <div id="canvas">
+			<canvas id="c1" width="400" height="280"></canvas>
+			<canvas id="c2" width="400" height="280"></canvas>
+			<p class="canvas-text">Green Screen applied</p>
+		  </div>
+		</div>
+
+		<script type="text/javascript" src="index.js"></script>
+		<script>
+		  var player = document.getElementById('video');
+
+		  var handleSuccess = function(stream) {
+			// Attach the video stream to the video element and autoplay.
+			player.srcObject = stream;
+			processor.doLoad()
+		  };
+
+		  navigator.mediaDevices.getUserMedia({video: true})
+			  .then(handleSuccess);
+		</script>
+	</body>
+</html>
