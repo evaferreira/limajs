@@ -1,28 +1,28 @@
-demo3.css
+/* video23.css */
 
 .bg{
 	max-width: 1000px;
-	min-height: 500px;
 	margin: 50px auto;
 	position: relative;
-	overflow: hidden;
 }
 
-.video{
-	filter: sepia(1) grayscale(50%);
-	
-	transition: filter 1s;
-	/* animation: filtro 5s 3s infinite; */
+.video1, .video2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
-.video:hover{
-	filter: sepia(0) grayscale(50%) contrast(3);
+.video2{
+	clip-path: circle(100px);
+	mix-blend-mode: soft-light;
+	filter: invert(0);
+	transition: clip-path 0.7s cubic-bezier(.56,1.67,.87,1.76),
+				filter    0.7s;
 }
-
-@keyframes filtro{
-	100%{
-		filter: sepia(0) grayscale(0) invert(1);
-	}
+.video2:hover{
+	clip-path: circle(250px);
+	filter: invert(1);
 }
 
 
