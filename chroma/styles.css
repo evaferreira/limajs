@@ -1,8 +1,9 @@
 #c1 {
-	/* display: none; */
+	display: none;
 }
 #video {
-	display: none;
+	width: 400px;
+	height: 280px;
 }
 #c2 {
 	background-image: url(images/hogwarts.png);

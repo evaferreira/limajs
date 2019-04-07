@@ -13,22 +13,18 @@
 		  <div id="canvas">
 			<canvas id="c1" width="400" height="280"></canvas>
 			<canvas id="c2" width="400" height="280"></canvas>
-			<p class="canvas-text">Green Screen applied</p>
+			
+			<div>
+				<label for="colorFilter">Select color</label>
+				<select id="colorFilter">
+					<option>Green</option>
+					<option>Blue</option>
+				</select>
+				<p class="canvas-text">Green Screen applied</p>
+			</div>
 		  </div>
 		</div>
 
 		<script type="text/javascript" src="index.js"></script>
-		<script>
-		  var player = document.getElementById('video');
-
-		  var handleSuccess = function(stream) {
-			// Attach the video stream to the video element and autoplay.
-			player.srcObject = stream;
-			processor.doLoad()
-		  };
-
-		  navigator.mediaDevices.getUserMedia({video: true})
-			  .then(handleSuccess);
-		</script>
 	</body>
 </html>
