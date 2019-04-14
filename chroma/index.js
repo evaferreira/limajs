@@ -85,9 +85,9 @@ function loadAll () {
     this.c2 = document.getElementById("c2");
     this.ctx2 = this.c2.getContext("2d");
     let self = this;
-    this.video.addEventListener("play", function() {
-        self.width = self.video.videoWidth;
-        self.height = self.video.videoHeight;
-        self.time_callback();
-    }, false);
+    this.video.addEventListener('loadeddata', event => {
+      self.width = self.video.videoWidth
+      self.height = self.video.videoHeight
+      self.time_callback()
+    }, false)
 };
