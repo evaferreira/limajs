@@ -25,7 +25,7 @@ colorFilter.addEventListener("change", pickedFilter);
 
 function compute_frame(color) {
     this.ctx1.drawImage(this.video, 0, 0, this.width, this.height);
-    let frame = this.ctx1.getImageData(0, 0, 640, 480);
+    let frame = this.ctx1.getImageData(0, 0, this.width, this.height);
 	
 	// 640x480 x 4 because rgba per pixel = 1228800 = l
     let l = frame.data.length / 4;
