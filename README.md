@@ -9,3 +9,5 @@ Este repositorio incluye archivos HTML y CSS. Los vídeos utilizados en los demo
 Slides: https://drive.google.com/open?id=10h8q2cO73yt34Gc_rT3bntKo9BawmC-F
 
 Chroma key online: https://chroma-limajs.netlify.com/
+
+Special thanks to [@elrumordelaluz](https://github.com/elrumordelaluz) who helped me fix a Firefox issue :sparkling_heart: 
